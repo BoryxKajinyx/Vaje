@@ -1,0 +1,17 @@
+1.
+	ICMP protokol
+2.
+	izmenjujeta se Echo (ping) request in Echo (ping) reply
+3.
+	pošiljatelj: 88.200.24.4
+	prejemnik:   193.2.1.66
+4.
+	pošiljatelj: 193.2.1.66
+	prejemnik:   88.200.24.4
+__________________________________________________________________
+__________________________________________________________________
+1.
+	(icmp or icmpv6) and _ws.col.info contains "ping"
+2.
+	ping pošilja
+		abcdefghijklmnopqrstuvwabcdefghi

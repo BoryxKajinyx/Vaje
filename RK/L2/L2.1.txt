@@ -1,0 +1,8 @@
+1.
+	prikaže: source, destination, type
+2.
+	ethernet II: 74B + 4B + 8B = 86B, podatki: 60B
+3.
+	naslov prejemnika: 00:12:43:3b:23:ff  proizvajalec: Cisco
+4.
+	za hitrejši prenos pri obstoječi infrastrukturi

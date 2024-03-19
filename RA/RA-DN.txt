@@ -1,0 +1,79 @@
+Prvi korak:
+r0 <-- Naslov v izvorni kodi
+r1 <-- Trenutni znak (Na začetku presledek)
+r2 <-- Prejšnji znak
+r3 <-- Naslov v počiščeni izvorni kodi (Začasni rezultat, se delno prepiše v 3. koraku)
+zanka prvega koraka:
+    premakne trenutni znak (r1) v r2
+    naloži znak na naslovu r0 v r1
+    preveri, če je ta znak 0 (konec niza). Če je, skoči na konec prvega koraka.
+    zamenja tabulator z presledkom
+    zamenja novo vrstico po oznaki (dvopičju) z presledkom
+    gre na naslednji znak, če je trenutni presledek in je prejšnji znak tudi presledek ali pa znak za novo vrstico.
+    če je trenutni znak afna (začetek komentarja), skoči v zanko komentar (spodaj).
+
+    shrani trenutni znak (r1) na naslov v r3 in r3 poveča za 1
+    gre na naslednji znak (r0 <- r0 + 1), skoči na začetek zanke.
+
+zanka komentar:
+    r0 <- r0 + 1
+    naloži znak na naslovu r0 v r1
+    če je ta znak za novo vrstico, skoči na začetek zanke prvega koraka,
+    sicer skoči na začetek zanke komentar
+
+Drugi korak:
+r0 <-- Naslov v počiščeni izvorni kodi
+r1 <-- Trenutni znak
+r2 <-- Prejšnji znak
+r3 <-- Naslov v izvorni kodi (tam se prepisuje končni rezultat tega koraka)
+r4 <-- Znak v izvorni kodi (potreben za prepisovanje znakov po koncu koraka z 0x00)
+zanka drugega koraka:
+    premakne trenutni znak (r1) v r2
+    naloži znak na naslovu r0 v r1
+    če je ta znak 0, skoči v zanko brisanje (spodaj)
+
+    če trenutni in prejšnji znak določata novo vrstico (0x0a), gre na naslednji znak
+    
+    shrani trenutni znak (r1) na naslov v r3 in r3 poveča za 1
+    gre na naslednji znak (r0 <- r0 + 1), skoči na začetek zanke.
+
+zanka brisanje:
+    naloži znak na naslovu r4 v r3
+    če je ta znak 0, skoči na konec 2. koraka
+    sicer shrani 0x00 na naslov v r3 in r3 poveča za 1
+    skoči na začetek zanke brisanje
+
+Tretji korak:
+r0 <-- Naslov v izvorni kodi
+r1 <-- Trenutni znak
+r2 <-- Izračunan naslov v čiščenem programu (na začetkku 0x00)
+r3 <-- Naslov v tabeli oznak
+r5 <-- Naslov najbližje nove vrstice
+r6 <-- Naslov konca oznake
+
+zanka tretjega koraka:
+    naloži znak na naslovu r0 v r1
+    če je ta znak 0, skoči na konec 3. koraka in na naslov v r3 zapiše 0x00
+    če je ta znak za novo vrstico (0x0a)
+        r2 <- r2 + 1
+        premakne r0 v r5 (začetek najbližje vrstice)
+    če je ta znak dvopičje (0x3a)
+        premakne r0 v r6 (to je konec oznake)
+        kliče funkcijo oznaka
+    
+    r0 <- r0 + 1
+    skoči na začetek zanke
+
+
+Funkcija oznaka:
+    premakne r5 v r0 (postavi na začetek vrstice)
+    r0 <- r0 + 1
+    zanka funkcije:
+        naloži znak na naslovu r0 v r1 in poveča r0 za 1
+        shrani znak v r1 na naslov r3 in r3 poveča za 1
+        če je r0 manj kot r6, skoči na začetek zanke
+    
+    če naslov ni poravnan, shrani 0x00 na naslov v r3 in r3 poveča za 1
+    shrani half-word v r2 na naslov v r3 in r3 poveča za 1
+    premakne r6 v r0
+    skoči na mesto klica funkcije

@@ -1,0 +1,22 @@
+1.
+	broadcast ff:ff:ff:ff:ff:ff
+2.
+	00:15:c5:ec:08:3f
+3.
+	Pošiljateljev MAC : 00:50:56:88:13:bd
+	Pošiljateljev IP: 88.200.24.6
+	Ciljni MAC: 00:00:00:00:00:00 - neznan naslov
+	Ciljni IP: 88.200.24.1
+4.
+	Neznan je ciljni MAC, računalnik to želi izvedeti
+5.
+	Ne računalnik z IP 88.200.24.1 je odgovoril na ARP poizvedbo in vnesel svoj MAC, ostale podatke pozna iz ARP zahteve.
+
+
+ARP tabela
+1.
+	arp -a
+2.
+	arp -s 192.168.254.10 12:34:56:aa:bb:aa
+3.
+	arp -d *

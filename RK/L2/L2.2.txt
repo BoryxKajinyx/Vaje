@@ -1,0 +1,16 @@
+1.
+	v komunikaciji so udeleženi 3 računalniki.
+2. 
+	00:06:5b:e3:4d:1d
+	ff:ff:ff:ff:ff:ff
+3.
+	v obeh je 28 paketov. Paketi se razlikujejo samo v času prejema. Na računalniku C je vklopljen promiscous mode, ker prikazuje pakete, ki niso naslovljeni nanj (komunikacija med A in B, A in DHCP)
+
+switch_cap
+
+1.
+	udeležena sta 2 računalnika
+2.
+	udeležen je samo računalnik A
+3.
+	v datoteki ping_switch_B.cap ne vidimo odgovora na broadcast ping request od A, ker stikalo pošilja napravam samo pakete, ki so jim naslovljeni, če so v stikalni tabeli, razdelilnik pa pošlje vse pakete vsem.

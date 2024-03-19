@@ -1,0 +1,24 @@
+1. Dosegljivost naslova 1.1.1.1
+	Windows:
+		ping 1.1.1.1
+	Linux:
+		ping 1.1.1.1
+2. Dosegljivost 2001:1470:fffd::1
+	Windows:
+		ping 2001:1470:fffd::1
+		(dozeže)
+	Linux:
+		ping 2001:1470:fffd::1
+		(ne doseže)
+3.
+	193.2.1.66 - dosegljiv
+	www.fri.uni-lj.si - dosegljiv
+	ipv6.google.com - dosegljiv
+	www.rtvslo.si - request timed out
+	www.berkeley.edu - dosegljiv
+4.
+	
+	www.rtvslo.si - dobi odgovor na brsklaniku, ne odgovarja na ping
+5.
+	ping -c 4 {destinacija}
+	

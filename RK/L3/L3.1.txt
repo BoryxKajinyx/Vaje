@@ -1,0 +1,39 @@
+Izračunaj:
+naslov omrežja, naslov broadcast, 
+najmanjši in največji naslov naprave,
+največje možno število naprav,
+masko v obeh oblikah
+v desetiški obliki
+za naslove:
+
+	193.2.129.30/27
+	Omrežje:
+	Broadcast
+	Min:
+	Max:
+	Naprave:
+	Maska:
+
+	192.168.1.7/255.255.255.0
+	Omrežje:
+	Broadcast
+	Min:
+	Max:
+	Naprave:
+	Maska:
+
+	212.235.189.158/255.255.255.240
+	Omrežje:
+	Broadcast
+	Min:
+	Max:
+	Naprave:
+	Maska:
+
+	10.0.0.0/18
+	Omrežje:
+	Broadcast
+	Min:
+	Max:
+	Naprave:
+	Maska:
