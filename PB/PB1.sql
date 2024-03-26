@@ -2,108 +2,108 @@
 	NALOGE ZA PB JADRALEC
 */
 -- 1.
-select ime
-from jadralec
-where rating mod 2 = 0;
+SELECT ime
+FROM jadralec
+WHERE rating mod 2 = 0;
 -- 2.
-select distinct c1.ime
-from coln c1, coln c2
-where c1.cid != c2.cid and c1.ime = c2.ime;
+SELECT DISTINCT c1.ime
+FROM coln c1, coln c2
+WHERE c1.cid != c2.cid AND c1.ime = c2.ime;
 -- 3.
-select ime
-from jadralec
-where rating mod 2 = 1;
+SELECT ime
+FROM jadralec
+WHERE rating mod 2 = 1;
 -- 4.
-select c.ime
-from coln c
-join rezervacija r on r.cid = c.cid
-join jadralec j on j.jid = r.jid
-where c.dolzina > 35 and j.starost <= 35;
+SELECT c.ime
+FROM coln c
+JOIN rezervacija r ON r.cid = c.cid
+JOIN jadralec j ON j.jid = r.jid
+WHERE c.dolzina > 35 AND j.starost <= 35;
 -- 5.
-select j.ime, r.dan
-from jadralec j
-join rezervacija r on r.jid = j.jid
-join coln c on c.cid = r.cid
-where c.ime = "Bavaria" or c.ime = "Sun Odyssey";
+SELECT j.ime, r.dan
+FROM jadralec j
+JOIN rezervacija r ON r.jid = j.jid
+JOIN coln c ON c.cid = r.cid
+WHERE c.ime = "Bavaria" or c.ime = "Sun Odyssey";
 -- 6.
-select j1.ime
-from jadralec j1, jadralec j2
-where j1.jid != j2.jid and j1.ime = j2.ime;
+SELECT j1.ime
+FROM jadralec j1, jadralec j2
+WHERE j1.jid != j2.jid AND j1.ime = j2.ime;
 -- 7.
-select j.ime
-from jadralec j
-join rezervacija r on r.jid = j.jid
-join coln c on c.cid=r.cid
-where year(dan) = 2006 and month(dan) in (4,5,6,7,8,9)
-	and c.ime like "%sun%";
+SELECT j.ime
+FROM jadralec j
+JOIN rezervacija r ON r.jid = j.jid
+JOIN coln c ON c.cid=r.cid
+WHERE YEAR(dan) = 2006 AND MONTH(dan) IN (4,5,6,7,8,9)
+	AND c.ime LIKE "%sun%";
 /*
 	NALOGE ZA EMPLOYEES
 */
 -- 1.
-select last_name
-from employees
-where last_name like "%ski%";
+SELECT last_name
+FROM employees
+WHERE last_name LIKE "%ski%";
 -- 2.
-select dept_name
-from departments;
+SELECT dept_name
+FROM departments;
 -- 3.
-select e.first_name, e.last_name
-from employees e
-join salaries s on s.emp_no=e.emp_no
-where s.salary >= 70000
+SELECT e.first_name, e.last_name
+FROM employees e
+JOIN salaries s ON s.emp_no=e.emp_no
+WHERE s.salary >= 70000
 group by e.first_name, e.last_name
-having sum(datediff(s.to_date, s.from_date)) > 365;
+having sum(datediff(s.to_date, s.FROM_date)) > 365;
 -- 4.
-select e.first_name, e.last_name
-from employees e
-join titles t on t.emp_no=e.emp_no
-where t.title = "Senior Staff";
+SELECT e.first_name, e.last_name
+FROM employees e
+JOIN titles t ON t.emp_no=e.emp_no
+WHERE t.title = "Senior Staff";
 -- 5.
-select last_name
-from employees
-where last_name like "pea%";
+SELECT last_name
+FROM employees
+WHERE last_name LIKE "pea%";
 -- 6.
-select last_name, title
-from employees
-join titles on employees.emp_no = titles.emp_no
-where last_name like "pea%";
+SELECT last_name, title
+FROM employees
+JOIN titles ON employees.emp_no = titles.emp_no
+WHERE last_name LIKE "pea%";
 -- 7.
-select *
-from employees
-where year(birth_date) between 1950 and 1960
-		and first_name rlike ".*[a|e|i|o|u]$"
-        and year(hire_date) >= 1990;
+SELECT *
+FROM employees
+WHERE YEAR(birth_date) between 1950 AND 1960
+		AND first_name rLIKE ".*[a|e|i|o|u]$"
+        AND YEAR(hire_date) >= 1990;
 /*
 	NALOGE ZA TRAVIAN
 */
 -- 1.
-select *
-from aliansa
-where alliance like "%mgp%";
+SELECT *
+FROM aliansa
+WHERE alliance LIKE "%mgp%";
 -- 2.
-select tribe
-from pleme;
+SELECT tribe
+FROM pleme;
 -- 3.
-select player
-from igralec i
-join naselje n on i.pid=n.pid
-where population >= 1000;
+SELECT player
+FROM igralec i
+JOIN naselje n ON i.pid=n.pid
+WHERE population >= 1000;
 -- 4.
-select village
-from igralec i
-join naselje n on n.pid = i.pid
-where player = "Ronin";
+SELECT village
+FROM igralec i
+JOIN naselje n ON n.pid = i.pid
+WHERE player = "Ronin";
 -- 5.
-select player
-from igralec
-where player like "moj%";
+SELECT player
+FROM igralec
+WHERE player LIKE "moj%";
 -- 6.
-select player, tribe
-from igralec i
-join pleme p on p.tid = igralec.tid
-where player like "moj%";
+SELECT player, tribe
+FROM igralec i
+JOIN pleme p ON p.tid = igralec.tid
+WHERE player LIKE "moj%";
 -- 7.
-select n.*
-from naselje n
-where x >= 0 and y >= 0 and population >= 750
-	and village rlike ".*[a|e|i|o|u]$";
+SELECT n.*
+FROM naselje n
+WHERE x >= 0 AND y >= 0 AND population >= 750
+	AND village rLIKE ".*[a|e|i|o|u]$";
