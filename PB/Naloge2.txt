@@ -1,0 +1,38 @@
+Vaje: Ponovitev in delo z datumi
+
+    Poišči vse evklidske in manhattan razdalje med naselji igralca “hinko”.
+    Izpiši imena mesecev v katerih so bile opravljene rezervacije.
+    Poišči imena in njihova pripadajoča plemena vseh igralev, ki pripadajo aliansam, ki vsebujejo znak ‘™’.
+    Poišči vsa imena igralcev, ki ne vsebujejo alfa-numeričnih znakov.
+    Ustvari navidezni atribut “Rangiran”, ki vsebuje vrednost ‘Da’, če ima jadralec podan rang, sicer ‘Ne’.
+    Z IF stavkom polepšajte izpis pri 2 in 6 nalogi prejšnjega tedna (jadralci).
+    Poišči šifre (emp_no) vseh, ki so na vsaj enem odelku bili zaposleni manj kot 5 let in na njem ne delajo več.
+    Poišči plače oziroma honorarje, ki so bili izplačani za največ sedem dni.
+    Poišči ime in priimek zaposlenih, ki so bili vodje odelkov manj kot 3 leta.
+    Poišči ime, priimek in ime odelka samo trenutnih vodji odelkov.
+    Poišči alianse, ki imajo vsaj eno naselje na območju (-50, -50) do (50, 50).
+    Poišči alianse, ki imajo naselja izven območja (-50, -50) do (50, 50). (Brez gnezdenja ali agregacijskih operacij)
+    Poišči vse pare naselji, katerim se populacija razlikuje za največ 100.
+    Poišči vse pare jadralcev, ki imajo enak rang.
+    Poišči vse pare jadralcev, ki še nimajo ranga.
+    Poišči pare igralcev in njihovo pleme alianse “Nwm”, ki pripadajo istemu plemenu.
+
+Vaje: Relacijska algebra
+
+    Poišči šifre vseh Henrikov (ime jadralca).
+    Poišči imena vseh čolnov, daljših od 20 čevljev.
+    Izpiši pare imen (jadralec, čoln).
+    Izpišite šifre čolnov z nepopolnimi (manjkajočimi) podatki.
+    Izpiši imena vseh doslej rezerviranih čolnov.
+    Kateri izmed jadralcev še ni rezerviral nobenega čolna? (Z uporabo jezika SQL še ne znamo!)
+    Poišči imena zaposlenih, ki so bili s svojim prvim dnem dela zaposleni kot vodja oddelka.
+    Poišči imena in priimke zaposlenih, ki nikoli niso delali kot vodje oddelkov.
+    Poišči zaposlene z enakim imenom in priimkom.
+    Poišči ime, priimek in ime odelka samo trenutnih vodji odelkov.
+    Poiščite plače za vodje oddelkov in njihove nazive.
+    Izpišite šifre naselji, ki pripadajo igralcu „matija“.
+    Izpišite vsa imena naselji, ki se začnejo ali končajo s cifro.
+    Izpišite šifre in imena igralcev, ki pripadajo aliansi „sladoled“ ali „ANIMALS“. Rešite tudi z unijo.
+    Izpišite imena naselji in število prebivalcev naselji, ki niso v tretjem kvadrantu.
+    Izpišite imena igralcev brez alianse.
+    Izpišite imena igralcev, ki ne pripadajo plemenom, ki se začnejo na črko „N“.

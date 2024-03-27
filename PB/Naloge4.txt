@@ -1,0 +1,25 @@
+Jadralci:
+
+1.Poiščite imena čolnov, ki so jih rezervirali vsi jadralci.
+2.Preverite, ali so vsi čolni z dolžino nad 35 čevljev iste barve (s kvantifikatorji).
+3.Preverite, ali so vsi čolni z dolžino nad 35 čevljev iste barve (s skupinskimi operatorji).
+4.Izpišite šifre, imena čolnov in število njihovih rezervacij urejeno v padajočem vrstnem redu.
+5.Izpišite imena, šifre in število rezervacij  vsakega jadralca. Kdor ni rezerviral ničesar, bo imel 0 rezervacij. Izpis uredite padajoče po številu rezervacij in naraščajoče po imenu jadralca.
+6.Izpišite imena in šifre vseh jadralcev, ki so rezervirali nadpovprečno število čolnov.
+
+Employees:
+
+1.Za vsakega zaposlenega izpišite število različnih oddelkov, na katerih je delal.
+2.Za vsak oddelek izpišite število zaposlenih. Razvrstite oddelke od tistega z največ do tistega z najmanj zaposlenimi.
+3.Poiščite imena zaposlenih, ki so imeli vsaj tri različne nazive.
+4.Izpišite številke zaposlenih in njihovih prvih plač urejene po padajočem vrstnem redu zneska prve plače.
+5.Ali ima kateri oddelek zaposlenih več žensk, kot moških.
+
+Travian:
+
+1.Za vsakega igralca izpišite število njegovih naselji.
+2.Za vsako alianso izpišite število njenih igralcev. Razvrstite alianse od tiste z največ do tiste z najmanj igralci.
+3.Za vsako alianso izpišite število njenih naselji in skupno populacijo.
+4.Katero pleme je najštevilčnejše. (Glede na skupno populacijo).
+5.Za vsakega igralca izpišite povprečno velikost njegovega naselja(glede na populacijo), vendar samo za tiste igralce, ki imajo vsaj pet naselji.
+6.Za vsak kvadrant preštejte število naselji na tem kvadrantu.*

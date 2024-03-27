@@ -1,0 +1,20 @@
+Jadralci:
+
+    Ugotovite ali imata kakšna dva čolna enako ime.
+    Izpišite šifre čolnov daljših od 35 čevljev, ki so jih rezervirali jadralci mlajši od 40 let.
+    Za vse jadralce izpišite podatke o njihovih rezervacijah. Za tiste, ki še niso nič rezervirali, naj bodo polja o rezervacijah prazna. Rešite z uporabo zunanjega stika in izpis uredite po jid!
+    Za vse jadralce izpišite podatke o njihovih rezervacijah. Za tiste, ki še niso nič rezervirali, naj bodo polja o rezervacijah prazna. Rešite brez uporabe zunanjega stika in izpis uredite po jid!
+    Preverite, ali pri prejšnji nalogi dobite enak rezultat, kot pri uporabi zunanjega stika. 
+
+Employees:
+
+    1.Poiščite zaposlene, ki nikoli niso delali kot vodje oddelkov.
+    2.Poiščite šifre zaposlenih, ki so dobili izplačilo za manj kot tri dni in tudi za več kot 364 dni.
+    3.Poiščite zaposlene, ki so napredovali iz naziva „Assistant Engineer“ na „Engineer“.
+    4.Poiščite zaposlene, ki so se zaposlili, ko so bili stari 20 ali manj, in tiste zaposlene, ki na enem odelku delajo vsaj 15 let.
+
+Travian:
+
+    Izpišite imena vseh igralcev, ki pripadajo naslednjim aliansam: GVERILA, IPERIT, *!NFS!*, PaX™, MGP I, -MGP-, sladoled, CYANIDE, *!NFS!*2, SVN, MGP, ANTHRAX, Uporniki, MGP A, GVERIL4, LEGEND, LUDI DDT, T•W in G.R.™
+    Izpišite imena igralcev, ki imajo vsaj eno naselje od točke (0,0) oddaljeno za več kot 20, vendar manj kot 50 enot.
+    Izpišite imena igralcev, ki imajo v vsakem kvadrantu vsaj eno naselje.
